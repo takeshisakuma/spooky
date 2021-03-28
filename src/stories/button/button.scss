@@ -10,7 +10,7 @@
   border-radius: 4px;
   cursor: pointer;
   line-height: 1;
-  display: inline-block;
+  display: flex;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-out,
     border-bottom 0.2s ease-out;
   border-bottom: 4px solid colors.$shadow;
@@ -27,6 +27,7 @@
     border-bottom: none;
     background-color: colors.$ash;
     color: colors.$light;
+    cursor: not-allowed;
     &:hover {
       opacity: 1;
     }

@@ -11,6 +11,7 @@ export const Button: FC<buttonType> = ({
   size = "medium",
   label,
   abled = true,
+  children,
   ...props
 }) => {
   return (

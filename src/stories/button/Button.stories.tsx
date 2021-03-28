@@ -26,7 +26,7 @@ Danger.args = {
 
 export const Disabled = Template.bind({});
 Disabled.args = {
-  roll: "disabled",
+  roll: "normal",
   label: "disabled",
   abled: false,
 };
