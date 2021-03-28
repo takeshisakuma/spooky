@@ -1,7 +1,7 @@
 export type buttonType = {
   roll?: "normal" | "danger";
   size?: "small" | "medium" | "large";
-  label: string;
+  label: any;
   abled?: boolean;
   onClick?: () => void;
 }
