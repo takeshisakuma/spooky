@@ -1,49 +1,25 @@
-import React from "react";
-import "./button.scss";
+import React, { FC } from "react";
+import { buttonType } from "./buttonType";
 
-export interface ButtonProps {
-  /**
-   * Is this the principal call to action on the page?
-   */
-  primary?: boolean;
-  /**
-   * What background color to use
-   */
-  backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: "small" | "medium" | "large";
-  /**
-   * Button contents
-   */
-  label: string;
-  /**
-   * Optional click handler
-   */
-  onClick?: () => void;
-}
+import "./button.scss";
 
 /**
  * Primary UI component for user interaction
  */
-export const Button: React.FC<ButtonProps> = ({
-  primary = false,
+export const Button: FC<buttonType> = ({
+  roll = "normal",
   size = "medium",
-  backgroundColor,
   label,
+  abled = true,
   ...props
 }) => {
-  const mode = primary
-    ? "storybook-button--primary"
-    : "storybook-button--secondary";
   return (
     <button
       type='button'
-      className={["storybook-button", `storybook-button--${size}`, mode].join(
+      className={["button", `buttonSize--${size}`, `buttonColor--${roll}`].join(
         " "
       )}
-      style={{ backgroundColor }}
+      disabled={abled ? false : true}
       {...props}>
       {label}
     </button>

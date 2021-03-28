@@ -1,0 +1,12 @@
+$htmlFontSize: 16;
+
+@mixin font-size($size, $base: $htmlFontSize) {
+  font-size: $size + px;
+  font-size: ($size / $base) + rem;
+}
+
+/* using
+p {
+  @include px2rem.font-size(12);
+}
+*/

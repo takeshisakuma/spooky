@@ -1,213 +1,311 @@
 import { Meta } from "@storybook/addon-docs/blocks";
-import Code from "./assets/code-brackets.svg";
-import Colors from "./assets/colors.svg";
-import Comments from "./assets/comments.svg";
-import Direction from "./assets/direction.svg";
-import Flow from "./assets/flow.svg";
-import Plugin from "./assets/plugin.svg";
-import Repo from "./assets/repo.svg";
-import StackAlt from "./assets/stackalt.svg";
 
-<Meta title='Example/Introduction' />
+<Meta title='Introduction/Introduction' />
 
 <style>{`
-  .subheading {
-    --mediumdark: '#999999';
-    font-weight: 900;
-    font-size: 13px;
-    color: #999;
-    letter-spacing: 6px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    margin-top: 40px;
-  }
+.heading1{
 
-  .link-list {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
-  }
 
-  @media (min-width: 620px) {
-    .link-list {
-      row-gap: 20px;
-      column-gap: 20px;
-      grid-template-columns: 1fr 1fr;
+}
+.heading1 .heading1-1{
+  color:#d45b7e;
+  font-size:64px;
+  transform: rotate(-15deg);
+  display: inline-block;
+  animation-name: letterRotate1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
+.heading1 .heading1-2{
+  margin-left:16px;
+  color:#e2a33e;
+  font-size:64px;
+  transform: rotate(5deg);
+  display: inline-block;
+  animation-name: letterRotate2;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+      animation-delay: 0.1s;
+}
+.heading1 .heading1-3{
+    margin-left:16px;
+  color:#98c461;
+    font-size:64px;
+      transform: rotate(15deg);
+  display: inline-block;
+  animation-name: letterRotate3;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+
+}
+
+.heading1 .heading1-4{
+    margin-left:16px;
+  color:#9878ae;
+    font-size:64px;
+      transform: rotate(25deg);
+  display: inline-block;
+    animation-name: letterRotate4;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+    animation-delay: 0.1s;
+}
+
+.heading1 .heading1-5{
+    margin-left:16px;
+  color:#6c9bcb;
+    font-size:64px;
+      transform: rotate(15deg);
+  display: inline-block;
+    animation-name: letterRotate5;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+      animation-delay: 0.2s;
+}
+
+.heading1 .heading1-6{
+  margin-left:16px;
+  color:#d75d5b;
+  font-size:64px;
+  transform: rotate(-10deg);
+  display: inline-block;
+  animation-name: letterRotate6;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
+
+@keyframes letterRotate1 {
+    0% {
+        transform:rotate(0deg);
     }
-  }
-
-  @media all and (-ms-high-contrast:none) {
-  .link-list {
-      display: -ms-grid;
-      -ms-grid-columns: 1fr 1fr;
-      -ms-grid-rows: 1fr 1fr;
+    100% {
+        transform:rotate(20deg);
     }
-  }
+}
+@keyframes letterRotate2 {
+    0% {
+        transform:rotate(-10deg);
+    }
+    100% {
+        transform:rotate(10deg);
+    }
+}
+@keyframes letterRotate3 {
+    0% {
+        transform:rotate(-5deg);
+    }
+    100% {
+        transform:rotate(15deg);
+    }
+}
+@keyframes letterRotate4 {
+    0% {
+        transform:rotate(-5deg);
+    }
+    100% {
+        transform:rotate(15deg);
+    }
+}
+@keyframes letterRotate5 {
+    0% {
+        transform:rotate(5deg);
+    }
+    100% {
+        transform:rotate(25deg);
+    }
+}
+@keyframes letterRotate6 {
+    0% {
+        transform:rotate(-15deg);
+    }
+    100% {
+        transform:rotate(5deg);
+    }
+}
 
-  .link-item {
-    display: block;
-    padding: 20px 30px 20px 15px;
-    border: 1px solid #00000010;
-    border-radius: 5px;
-    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
-    color: #333333;
-    display: flex;
-    align-items: flex-start;
-  }
 
-  .link-item:hover {
-    border-color: #1EA7FD50;
-    transform: translate3d(0, -3px, 0);
-    box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
-  }
+.heading2{
+  margin-top:40px!important;
+  color:#2d3436;
+}
 
-  .link-item:active {
-    border-color: #1EA7FD;
-    transform: translate3d(0, 0, 0);
-  }
+.heading3{
+  color:#2d3436;
 
-  .link-item strong {
-    font-weight: 700;
-    display: block;
-    margin-bottom: 2px;
-  }
+}
 
-  .link-item img {
-    height: 40px;
-    width: 40px;
-    margin-right: 15px;
-    flex: none;
-  }
+.h3Section{
+    margin-top:20px;
+}
+.h3Section + .h3Section{
+    margin-top:40px;
+}
+.colorBox__wrapper{
+  margin-top:0px;
+  display:flex;
 
-  .link-item span {
-    font-size: 14px;
-    line-height: 20px;
-  }
+}
+.colorBox__component{
+  width:200px;
+  background:white;
+}
+.colorBox__component + .colorBox__component{
+ margin-left:20px;
+}
 
-  .tip {
-    display: inline-block;
-    border-radius: 1em;
-    font-size: 11px;
-    line-height: 12px;
-    font-weight: 700;
-    background: #E7FDD8;
-    color: #66BF3C;
-    padding: 4px 12px;
-    margin-right: 10px;
-    vertical-align: top;
-  }
+.colorBox__wrapper .colorBox__component .colorBox__dataList{
+    margin:0;
+  padding:0;
+}
+.colorBox__wrapper .colorBox__component .colorBox__title{
+  font-size:16px;
+  font-style:italic;
+  font-weight:bold;
+  margin:0;
+  padding:0;
+    color:#2d3436;
+}
+.colorBox__wrapper .colorBox__component .colorBox__color{
+  width:40px;
+  height:40px;
+  background:red;
+  display:inline-block;
+  padding:0;
+  margin:4px 0 0;
+}
 
-  .tip-wrapper {
-    font-size: 13px;
-    line-height: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
+.colorBox__wrapper .colorBox__component .colorBox__number{
+    padding:0;
+margin:0;
+  color:#2d3436;
+}
 
-  .tip-wrapper code {
-    font-size: 12px;
-    display: inline-block;
-  }
 
+.colorBox__wrapper .colorBox__component .colorBox__description{
+  padding:0;
+  margin:4px 0 0;
+}
 
 `}</style>
 
-# Welcome to Storybook
+<h1 class='heading1'>
+  <span class='heading1-1'>S</span>
+  <span class='heading1-2'>p</span>
+  <span class='heading1-3'>o</span>
+  <span class='heading1-4'>o</span>
+  <span class='heading1-5'>k</span>
+  <span class='heading1-6'>y</span>
+</h1>
 
-Storybook helps you build UI components in isolation from your app's business logic, data, and context.
-That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
+<section class="h2Section">
+<h2 class='heading2'>Color</h2>
 
-Browse example stories now by navigating to them in the sidebar.
-View their code in the `src/stories` directory to learn how they work.
-We recommend building UIs with a [**component-driven**](https://componentdriven.org) process starting with atomic components and ending with pages.
+<section class='h3Section'>
+  <h3 class='heading3'>Theme Color</h3>
+  <div class='colorBox__wrapper'>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Main Color</dt>
+        <dd class='colorBox__color'></dd>
+      </dl>
+    </div>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Sub Color</dt>
+        <dd class='colorBox__color'></dd>
+      </dl>
+    </div>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Accent Color</dt>
+        <dd class='colorBox__color'></dd>
+      </dl>
+    </div>
+  </div>
+</section>
 
-<div className='subheading'>Configure</div>
+<section class="h3Section">
+<h3 class='heading3'>achromatic color</h3>
+<div class='colorBox__wrapper'>
+  <div class='colorBox__component'>
+    <dl class='colorBox__dataList'>
+      <dt class='colorBox__title'>Blue</dt>
+      <dd class='colorBox__color' style={{ backgroundColor: "#0984e3" }}></dd>
+      <dd class='colorBox__number'>#0984e3</dd>
+      <dd class='colorBox__description'>Primary Color</dd>
+    </dl>
+  </div>
+  <div class='colorBox__component'>
+    <dl class='colorBox__dataList'>
+      <dt class='colorBox__title'>Red</dt>
+      <dd class='colorBox__color' style={{ backgroundColor: "#d63031" }}></dd>
+      <dd class='colorBox__number'>#d63031</dd>
+      <dd class='colorBox__description'>for Error Message</dd>
+    </dl>
+  </div>
+  <div class='colorBox__component'>
+    <dl class='colorBox__dataList'>
+      <dt class='colorBox__title'>Yellow</dt>
+      <dd class='colorBox__color' style={{ backgroundColor: "#fdcb6e" }}></dd>
+      <dd class='colorBox__number'>#fdcb6e</dd>
+      <dd class='colorBox__description'>for Warning</dd>
+    </dl>
+  </div>
 
-<div className='link-list'>
-  <a
-    className='link-item'
-    href='https://storybook.js.org/docs/react/addons/addon-types'
-    target='_blank'>
-    <img src={Plugin} alt='plugin' />
-    <span>
-      <strong>Presets for popular tools</strong>
-      Easy setup for TypeScript, SCSS and more.
-    </span>
-  </a>
-  <a
-    className='link-item'
-    href='https://storybook.js.org/docs/react/configure/webpack'
-    target='_blank'>
-    <img src={StackAlt} alt='Build' />
-    <span>
-      <strong>Build configuration</strong>
-      How to customize webpack and Babel
-    </span>
-  </a>
-  <a
-    className='link-item'
-    href='https://storybook.js.org/docs/react/configure/styling-and-css'
-    target='_blank'>
-    <img src={Colors} alt='colors' />
-    <span>
-      <strong>Styling</strong>
-      How to load and configure CSS libraries
-    </span>
-  </a>
-  <a
-    className='link-item'
-    href='https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack'
-    target='_blank'>
-    <img src={Flow} alt='flow' />
-    <span>
-      <strong>Data</strong>
-      Providers and mocking for data libraries
-    </span>
-  </a>
+  <div class='colorBox__component'>
+    <dl class='colorBox__dataList'>
+      <dt class='colorBox__title'>Green</dt>
+      <dd class='colorBox__color' style={{ backgroundColor: "#00b894" }}></dd>
+      <dd class='colorBox__number'>#00b894</dd>
+      <dd class='colorBox__description'>for Safe</dd>
+    </dl>
+  </div>
 </div>
+</section>
 
-<div className='subheading'>Learn</div>
-
-<div className='link-list'>
-  <a className='link-item' href='https://storybook.js.org/docs' target='_blank'>
-    <img src={Repo} alt='repo' />
-    <span>
-      <strong>Storybook documentation</strong>
-      Configure, customize, and extend
-    </span>
-  </a>
-  <a
-    className='link-item'
-    href='https://www.learnstorybook.com'
-    target='_blank'>
-    <img src={Direction} alt='direction' />
-    <span>
-      <strong>In-depth guides</strong>
-      Best practices from leading teams
-    </span>
-  </a>
-  <a
-    className='link-item'
-    href='https://github.com/storybookjs/storybook'
-    target='_blank'>
-    <img src={Code} alt='code' />
-    <span>
-      <strong>GitHub project</strong>
-      View the source and add issues
-    </span>
-  </a>
-  <a className='link-item' href='https://discord.gg/storybook' target='_blank'>
-    <img src={Comments} alt='comments' />
-    <span>
-      <strong>Discord chat</strong>
-      Chat with maintainers and the community
-    </span>
-  </a>
-</div>
-
-<div className='tip-wrapper'>
-  <span className='tip'>Tip</span>Edit the Markdown in{" "}
-  <code>src/stories/Introduction.stories.mdx</code>
-</div>
+<section class='h3Section'>
+  <h3 class='heading3'>chromatic color</h3>
+  <div class='colorBox__wrapper'>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Light</dt>
+        <dd class='colorBox__color' style={{ backgroundColor: "#dfe6e9" }}></dd>
+        <dd class='colorBox__number'>#dfe6e9</dd>
+      </dl>
+    </div>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Silver</dt>
+        <dd class='colorBox__color' style={{ backgroundColor: "#b2bec3" }}></dd>
+        <dd class='colorBox__number'>#b2bec3</dd>
+      </dl>
+    </div>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Ash</dt>
+        <dd class='colorBox__color' style={{ backgroundColor: "#636e72" }}></dd>
+        <dd class='colorBox__number'>#636e72</dd>
+      </dl>
+    </div>
+    <div class='colorBox__component'>
+      <dl class='colorBox__dataList'>
+        <dt class='colorBox__title'>Dark</dt>
+        <dd class='colorBox__color' style={{ backgroundColor: "#2d3436" }}></dd>
+        <dd class='colorBox__number'>#2d3436</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+</section>

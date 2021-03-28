@@ -1,0 +1,40 @@
+//breakpont
+$smallMax: 640;
+$mediumMin: $smallMax + 1;
+$mediumMax: 960;
+$largeMin: $mediumMax + 1;
+
+// responsive
+$width-range: (
+  "small": "screen and (max-width:" + $smallMax + "px)",
+  "medium": "screen and (min-width:" + $mediumMin + "px) and (max-width:" +
+    $mediumMax + "px)",
+  "large": "screen and (min-width:" + $largeMin + "px)",
+  "small+medium": "screen and (max-width:" + $mediumMax + "px)",
+  "medium+large": "screen and  (min-width:" + $mediumMin + "px)",
+) !default;
+
+// mixin
+@mixin mq($size) {
+  @media #{map-get($width-range, $size)} {
+    @content;
+  }
+}
+
+/* using
+@include mediaQuery.mq("small") {
+  //for small
+}
+@include mediaQuery.mq("medium") {
+  //for medium
+}
+@include mediaQuery.mq("large") {
+  //for large
+}
+@include mediaQuery.mq("small+medium") {
+  //for small and medium
+}
+@include mediaQuery.mq("medium+large") {
+  //for medium and large
+}
+*/
