@@ -24,9 +24,15 @@ Danger.args = {
   label: "Danger",
 };
 
+export const Submit = Template.bind({});
+Submit.args = {
+  roll: "submit",
+  label: "Submit",
+};
+
 export const Disabled = Template.bind({});
 Disabled.args = {
   roll: "normal",
-  label: "disabled",
+  label: "Disabled",
   abled: false,
 };
