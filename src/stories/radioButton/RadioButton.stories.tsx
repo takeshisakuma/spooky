@@ -15,15 +15,17 @@ const Template: Story<radioButtonType> = (args) => <RadioButton {...args} />;
 export const Unchecked = Template.bind({});
 Unchecked.args = {
   checked: false,
-  name: "checklist",
+  name: "choiceGroup",
   id: "item1",
   item: "item1",
+  value: "item1",
 };
 
 export const Checked = Template.bind({});
 Checked.args = {
   checked: true,
-  name: "checklist",
+  name: "choiceGroup",
   id: "item2",
   item: "item2",
+  value: "item2",
 };

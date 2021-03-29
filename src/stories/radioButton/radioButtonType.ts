@@ -3,4 +3,5 @@ export type radioButtonType = {
   name: string;
   id: string;
   item: string;
+  value: string;
 }

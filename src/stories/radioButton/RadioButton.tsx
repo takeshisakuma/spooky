@@ -10,6 +10,7 @@ export const RadioButton: FC<radioButtonType> = ({
   checked,
   id,
   item,
+  value,
   ...props
 }) => {
   return (
@@ -18,6 +19,7 @@ export const RadioButton: FC<radioButtonType> = ({
         type='radio'
         id={id}
         checked={checked ? true : false}
+        value={value}
         {...props}></input>
       <label htmlFor={id}>{item}</label>
     </>
