@@ -8,7 +8,7 @@ import "./button.scss";
  */
 export const Button: FC<buttonType> = ({
   roll = "normal",
-  size = "medium",
+  size = "large",
   label,
   abled = true,
   children,

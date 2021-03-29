@@ -9,7 +9,7 @@ import "./icon.scss";
  */
 export const Icon: FC<iconType> = ({
   img,
-  size = "medium",
+  size = "large",
   backgroundColor,
   ...props
 }) => {

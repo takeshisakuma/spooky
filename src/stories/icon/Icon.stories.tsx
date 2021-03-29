@@ -15,13 +15,13 @@ const Template: Story<iconType> = (args) => <Icon {...args} />;
 export const Search = Template.bind({});
 Search.args = {
   img: "search",
-  size: "medium",
+  size: "large",
   backgroundColor: "#636e72",
 };
 
 export const Externallink = Template.bind({});
 Externallink.args = {
   img: "externallink",
-  size: "medium",
+  size: "large",
   backgroundColor: "#636e72",
 };
