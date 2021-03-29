@@ -19,8 +19,8 @@ Search.args = {
   backgroundColor: "#636e72",
 };
 
-export const External = Template.bind({});
-External.args = {
+export const Externallink = Template.bind({});
+Externallink.args = {
   img: "externallink",
   size: "medium",
   backgroundColor: "#636e72",

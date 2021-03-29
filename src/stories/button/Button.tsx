@@ -23,6 +23,7 @@ export const Button: FC<buttonType> = ({
       disabled={abled ? false : true}
       {...props}>
       {label}
+      {children}
     </button>
   );
 };
