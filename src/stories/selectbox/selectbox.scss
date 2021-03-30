@@ -1,0 +1,35 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.selectbox {
+  padding: 16px 30px 16px 16px;
+}
+
+select {
+  /* remove ▼ */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+
+  /* ▼ */
+  background: #eee url(../assets/img/triangleDown.svg) no-repeat center right
+    10px/16px 16px;
+  background-size: 10px;
+}
+
+/* remove ▼(for IE) */
+select::-ms-expand {
+  display: none;
+}
+
+/* ▲ */
+select:focus {
+  background: #eee url(../assets/img/triangleUp.svg) no-repeat center right 10px/16px
+    16px;
+  background-size: 10px;
+  border-bottom: 1px solid#e74c3c;
+  outline: none;
+}

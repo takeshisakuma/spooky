@@ -3,63 +3,67 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.radioButton {
+.checkbox {
+  cursor: pointer;
 }
 
 /* デフォルトのinputを隠す */
-input[type="radio"] {
+input[type="checkbox"] {
   display: initial;
   position: relative;
   opacity: 0;
 }
 
 /* ラベルの前の四角形を作る */
-input[type="radio"] + label::before {
+input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  border: 2px solid #2d3436;
+  border: 2px solid #343434;
   width: 16px;
   height: 16px;
   margin-top: 4px;
 }
 
 /* ラベルの前の四角形のフォーカス時 */
-input[type="radio"]:focus + label::before {
+input[type="checkbox"]:focus + label::before {
   border: 2px solid #d63031;
 }
 
 /* SVGの位置と大きさの指定 */
-input[type="radio"] + label > svg {
+input[type="checkbox"] + label > svg {
   width: 20px;
   height: 20px;
   position: relative;
   margin-right: 5px;
   left: 3px;
-  top: 3px;
+  top: 2px;
 }
 
 /* チェックマークの設定(未チェック時)  */
-input[type="radio"] + label > svg > path {
+input[type="checkbox"] + label > svg > path {
   fill: none;
-  stroke: #00b894;
+  stroke: #d63031;
   stroke-linejoin: round;
   stroke-linecap: round;
-  stroke-dasharray: 130;
+  stroke-dasharray: 100;
   stroke-dashoffset: 100;
   stroke-opacity: 0;
   stroke-width: 8px;
-  transition: stroke-dashoffset 0.2s ease-out;
+  transition: stroke-dashoffset 0.1s ease-out;
 }
 
 /* チェックマークの設定(チェック時) */
-input[type="radio"]:checked + label > svg > path {
+input[type="checkbox"]:checked + label > svg > path {
   stroke-dashoffset: 0;
   stroke-opacity: 1;
 }
 
 /* ラベルの位置調整 */
-input[type="radio"] + label {
+input[type="checkbox"] + label {
   left: -30px;
   position: relative;
-  color: #2d3436;
+}
+
+.checkboxLabel {
+  cursor: pointer;
 }
