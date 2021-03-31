@@ -10,7 +10,9 @@ export default {
   component: Checkbox,
 } as Meta;
 
-const Template: Story<checkboxType> = (args) => <Checkbox {...args} />;
+const Template: Story<checkboxType> = (args: checkboxType) => (
+  <Checkbox {...args} />
+);
 
 export const Normal = Template.bind({});
 Normal.args = {

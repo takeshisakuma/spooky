@@ -10,7 +10,9 @@ export default {
   component: IconButton,
 } as Meta;
 
-const Template: Story<iconButtonType> = (args) => <IconButton {...args} />;
+const Template: Story<iconButtonType> = (args: iconButtonType) => (
+  <IconButton {...args} />
+);
 
 export const SearchButton = Template.bind({});
 SearchButton.args = {
@@ -25,5 +27,13 @@ ExternallinkButton.args = {
   roll: "normal",
   label: "Externallink",
   img: "externallink",
+  size: "large",
+};
+
+export const InternallinkButton = Template.bind({});
+InternallinkButton.args = {
+  roll: "normal",
+  label: "Internallink",
+  img: "internallink",
   size: "large",
 };

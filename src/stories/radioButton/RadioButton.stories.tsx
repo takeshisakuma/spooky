@@ -10,7 +10,9 @@ export default {
   component: RadioButton,
 } as Meta;
 
-const Template: Story<radioButtonType> = (args) => <RadioButton {...args} />;
+const Template: Story<radioButtonType> = (args: radioButtonType) => (
+  <RadioButton {...args} />
+);
 
 export const Normal = Template.bind({});
 Normal.args = {

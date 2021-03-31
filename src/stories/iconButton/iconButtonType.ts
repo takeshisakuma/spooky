@@ -1,8 +1,8 @@
 export type iconButtonType = {
-  roll?: "normal" | "danger";
+  roll?: "normal" | "danger" | "submit";
   size?: "small" | "medium" | "large";
   label: any;
   abled?: boolean;
-  img: "search" | "externallink";
+  img: "search" | "externallink" | "internallink";
   onClick?: () => void;
 }

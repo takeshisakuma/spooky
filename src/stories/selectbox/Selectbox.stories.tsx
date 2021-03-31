@@ -10,14 +10,17 @@ export default {
   component: Selectbox,
 } as Meta;
 
-const Template: Story<selectboxType> = (args) => <Selectbox {...args} />;
+const Template: Story<selectboxType> = (args: selectboxType) => (
+  <Selectbox {...args} />
+);
 
 export const Normal = Template.bind({});
 Normal.args = {
   name: "selectGroup",
   items: [
     { value: "item1", display: "ITEM1" },
-    { value: "item2", display: "ITEM2", selected: true },
+    { value: "item2", display: "ITEM2" },
     { value: "item3", display: "ITEM3" },
   ],
+  selected: 2,
 };

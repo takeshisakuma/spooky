@@ -10,7 +10,7 @@ export default {
   component: FloatingInput,
 } as Meta;
 
-const Template: Story<floatingInputType> = (args) => (
+const Template: Story<floatingInputType> = (args: floatingInputType) => (
   <FloatingInput {...args} />
 );
 

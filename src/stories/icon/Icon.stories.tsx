@@ -10,7 +10,7 @@ export default {
   component: Icon,
 } as Meta;
 
-const Template: Story<iconType> = (args) => <Icon {...args} />;
+const Template: Story<iconType> = (args: iconType) => <Icon {...args} />;
 
 export const Search = Template.bind({});
 Search.args = {
@@ -22,6 +22,13 @@ Search.args = {
 export const Externallink = Template.bind({});
 Externallink.args = {
   img: "externallink",
+  size: "large",
+  backgroundColor: "#636e72",
+};
+
+export const Internallink = Template.bind({});
+Internallink.args = {
+  img: "internallink",
   size: "large",
   backgroundColor: "#636e72",
 };

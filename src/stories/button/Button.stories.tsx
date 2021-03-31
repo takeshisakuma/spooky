@@ -10,7 +10,7 @@ export default {
   component: Button,
 } as Meta;
 
-const Template: Story<buttonType> = (args) => <Button {...args} />;
+const Template: Story<buttonType> = (args: buttonType) => <Button {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {

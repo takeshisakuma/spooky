@@ -6,12 +6,20 @@ import "./selectbox.scss";
 /**
  * Primary UI component for user interaction
  */
-export const Selectbox: FC<selectboxType> = ({ name, items, ...props }) => {
+export const Selectbox: FC<selectboxType> = ({
+  name,
+  items,
+  selected,
+  ...props
+}) => {
   return (
     <>
       <select name={name} className='selectbox'>
-        {items.map((item) => (
-          <option key={item.value} value={item.value} selected={item.selected}>
+        {items.map((item, index: number) => (
+          <option
+            key={item.value}
+            value={item.value}
+            selected={selected === index ? true : false}>
             {item.display}
           </option>
         ))}
