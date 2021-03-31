@@ -1,0 +1,28 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.input--letter {
+  margin-top: 20px;
+}
+
+.floatinglabel {
+  margin-top: 40px;
+  position: relative;
+}
+
+.labeltext {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+  font-size: 16px;
+  color: #7f8c8d;
+  transform-origin: 0 0;
+  transition: all 0.2s ease-out;
+}
+
+.floatinglabel input:focus + span {
+  color: #333;
+  transform: translateY(-38px) translateX(-16px);
+}

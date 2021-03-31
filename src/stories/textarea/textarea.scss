@@ -4,13 +4,13 @@
 @use "../assets/scss/_mediaQuery.scss";
 
 textarea {
-  padding: 10px;
-  border-radius: 0;
-  resize: none;
-  border: 1px solid transparent;
-  transition: border 0.2s ease-out;
-  outline: none;
   background-color: #eee;
+  border: 1px solid transparent;
+  border-radius: 0;
+  outline: 0;
+  padding: 10px;
+  resize: none;
+  transition: border 0.2s ease-out;
 }
 
 textarea::-webkit-scrollbar {

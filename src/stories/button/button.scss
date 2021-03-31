@@ -4,18 +4,19 @@
 @use "../assets/scss/_mediaQuery.scss";
 
 .button {
+  border: none;
+  border-bottom: 4px solid colors.$shadow;
+  border-radius: 4px;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
   font-family: inherit;
   font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
   line-height: 1;
-  display: flex;
+  outline: 0;
   transition: opacity 0.2s ease-in-out, transform 0.2s ease-out,
     border-bottom 0.2s ease-out;
-  border-bottom: 4px solid colors.$shadow;
-  outline: 0;
-  color: inherit;
+
   &:hover {
     opacity: 0.6;
   }
@@ -23,11 +24,17 @@
     border-bottom: 0px solid transparent;
     transform: translateY(4px);
   }
+
+  &:focus-visible {
+    outline: 1px solid colors.$red;
+  }
+
   &:disabled {
     border-bottom: none;
     background-color: colors.$ash;
     color: colors.$light;
     cursor: not-allowed;
+
     &:hover {
       opacity: 1;
     }
@@ -35,17 +42,17 @@
 }
 
 .buttonColor--normal {
-  color: colors.$white;
   background-color: colors.$blue;
+  color: colors.$white;
 }
 .buttonColor--danger {
-  color: colors.$white;
   background-color: colors.$red;
+  color: colors.$white;
 }
 
 .buttonColor--submit {
-  color: colors.$white;
   background-color: colors.$green;
+  color: colors.$white;
 }
 
 .buttonSize--small {
