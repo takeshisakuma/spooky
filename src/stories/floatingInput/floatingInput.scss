@@ -5,6 +5,10 @@
 
 .input--letter {
   margin-top: 20px;
+
+  &:not(:placeholder-shown) + span {
+    transform: translateY(-38px) translateX(-16px);
+  }
 }
 
 .floatinglabel {

@@ -17,7 +17,11 @@ export const FloatingInput: FC<floatingInputType> = ({
 }) => {
   return (
     <label className='floatinglabel'>
-      <Input type={type} maxLength={maxLength} required={required}></Input>
+      <Input
+        type={type}
+        maxLength={maxLength}
+        required={required}
+        placeholder='&nbsp;'></Input>
       <span className='labeltext'>{display}</span>
     </label>
   );

@@ -3,4 +3,5 @@ export type inputType = {
   maxLength: number;
   required: boolean;
   name?: string;
+  placeholder?: string;
 }
