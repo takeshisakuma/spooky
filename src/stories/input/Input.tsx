@@ -12,6 +12,8 @@ export const Input: FC<inputType> = ({
   required,
   name,
   children,
+  placeholder,
+  pattern,
   ...props
 }) => {
   return (
@@ -20,6 +22,8 @@ export const Input: FC<inputType> = ({
       className={["input--letter", `input--${type}`].join(" ")}
       maxLength={maxLength}
       required={required ? false : true}
+      pattern={pattern}
+      placeholder={placeholder}
       {...props}>
       {children}
     </input>

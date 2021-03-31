@@ -11,8 +11,13 @@ export const RadioButton: FC<radioButtonType> = ({ name, items, ...props }) => {
     <>
       {items.map((item) => (
         <div key={item.value}>
-          <input name={name} type='radio' id={item.value} />
-          <label htmlFor={item.value}>
+          <input
+            name={name}
+            type='radio'
+            id={item.value}
+            className='radioButton'
+          />
+          <label htmlFor={item.value} className='radioLabel'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               x='0px'

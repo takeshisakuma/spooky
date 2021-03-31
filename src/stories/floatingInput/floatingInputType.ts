@@ -4,4 +4,6 @@ export type floatingInputType = {
   required: boolean;
   name?: string;
   display: string;
+  placeholder?: string;
+  pattern?: string;
 }

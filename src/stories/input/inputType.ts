@@ -4,4 +4,5 @@ export type inputType = {
   required: boolean;
   name?: string;
   placeholder?: string;
+  pattern?: string;
 }

@@ -21,4 +21,33 @@
     display: none;
   }
   -moz-appearance: textfield;
+
+  /* OK */
+  &:invalid {
+    color: colors.$red;
+  }
+  /* NG */
+  &:valid {
+    color: colors.$green;
+  }
+}
+.input--email {
+  /* OK */
+  &:invalid {
+    color: colors.$red;
+  }
+  /* NG */
+  &:valid {
+    color: colors.$green;
+  }
+}
+.input--tel {
+  /* OK */
+  &:invalid {
+    color: colors.$red;
+  }
+  /* NG */
+  &:valid {
+    color: colors.$green;
+  }
 }

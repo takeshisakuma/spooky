@@ -3,34 +3,30 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
+/* hide defoult input */
 .checkbox {
-  cursor: pointer;
-}
-
-/* デフォルトのinputを隠す */
-input[type="checkbox"] {
   display: initial;
   position: relative;
   opacity: 0;
 }
 
-/* ラベルの前の四角形を作る */
-input[type="checkbox"] + label::before {
+/* make square before label */
+.checkbox + label::before {
   content: "";
   position: absolute;
   border: 2px solid #343434;
   width: 16px;
   height: 16px;
-  margin-top: 4px;
+  top: 0;
 }
 
-/* ラベルの前の四角形のフォーカス時 */
-input[type="checkbox"]:focus + label::before {
-  border: 2px solid #d63031;
+/* focus for square */
+.checkbox:focus + label::before {
+  border: 2px solid colors.$red;
 }
 
-/* SVGの位置と大きさの指定 */
-input[type="checkbox"] + label > svg {
+/* set SVG position and size */
+.checkbox + label > svg {
   width: 20px;
   height: 20px;
   position: relative;
@@ -39,10 +35,10 @@ input[type="checkbox"] + label > svg {
   top: 2px;
 }
 
-/* チェックマークの設定(未チェック時)  */
-input[type="checkbox"] + label > svg > path {
+/* unchecked  */
+.checkbox + label > svg > path {
   fill: none;
-  stroke: #d63031;
+  stroke: colors.$red;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-dasharray: 100;
@@ -52,18 +48,19 @@ input[type="checkbox"] + label > svg > path {
   transition: stroke-dashoffset 0.1s ease-out;
 }
 
-/* チェックマークの設定(チェック時) */
-input[type="checkbox"]:checked + label > svg > path {
+/* checked */
+.checkbox:checked + label > svg > path {
   stroke-dashoffset: 0;
   stroke-opacity: 1;
 }
 
-/* ラベルの位置調整 */
-input[type="checkbox"] + label {
+/* label position */
+.checkbox + label {
   left: -30px;
   position: relative;
 }
 
+/* hover */
 .checkboxLabel {
   cursor: pointer;
 }
