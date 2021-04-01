@@ -14,7 +14,7 @@
 .checkbox + label::before {
   content: "";
   position: absolute;
-  border: 2px solid #343434;
+  border: 1px solid #343434;
   width: 16px;
   height: 16px;
   top: 0;
@@ -22,7 +22,7 @@
 
 /* focus for square */
 .checkbox:focus + label::before {
-  border: 2px solid colors.$red;
+  border: 1px solid colors.$red;
 }
 
 /* set SVG position and size */

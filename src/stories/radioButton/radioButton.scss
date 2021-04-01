@@ -12,7 +12,7 @@
 
 /* make square before label */
 .radioButton + .radioLabel::before {
-  border: 2px solid #2d3436;
+  border: 1px solid #2d3436;
   content: "";
   height: 16px;
   top: 0px;
@@ -22,13 +22,13 @@
 
 /* focus for square */
 .radioButton:focus + .radioLabel::before {
-  border: 2px solid colors.$red;
+  border: 1px solid colors.$red;
 }
 
 /* set SVG position and size */
 .radioButton + .radioLabel > svg {
   height: 20px;
-  left: 3px;
+  left: 2px;
   margin-right: 5px;
   position: relative;
   top: 3px;
@@ -39,13 +39,12 @@
 .radioButton + .radioLabel > svg > path {
   fill: none;
   stroke: colors.$green;
-
   stroke-dasharray: 130;
   stroke-dashoffset: 100;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-opacity: 0;
-  stroke-width: 8px;
+  stroke-width: 4px;
   transition: stroke-dashoffset 0.2s ease-out;
 }
 
