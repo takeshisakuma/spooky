@@ -1,0 +1,52 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.heading2 {
+  margin: 0;
+}
+.heading2Size--xtraSmall {
+  font-size: 10px;
+}
+
+.heading2Size--small {
+  font-size: 16px;
+}
+
+.heading2Size--midium {
+  font-size: 24px;
+}
+
+.heading2Size--large {
+  font-size: 32px;
+}
+
+.heading2Size--xtraLarge {
+  font-size: 48px;
+}
+
+.heading2Color--white {
+  color: colors.$white;
+}
+.heading2Color--light {
+  color: colors.$light;
+}
+
+.heading2Color--silver {
+  color: colors.$silver;
+}
+
+.heading2Color--ash {
+  color: colors.$ash;
+}
+
+.heading2Color--dark {
+  color: colors.$dark;
+}
+.heading2Color--black {
+  color: colors.$black;
+}
+.heading2Decoration--underline {
+  text-decoration: 4px underline colors.$accentColor;
+}
