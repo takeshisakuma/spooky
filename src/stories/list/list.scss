@@ -1,0 +1,67 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.listGroup {
+  margin: 0;
+}
+.listGroupColor--white {
+  color: colors.$white;
+}
+.listGroupSize--small {
+  padding-left: 0px;
+
+  + .listGroupSize--small {
+    margin-top: 10px;
+  }
+}
+
+.listGroupSize--medium {
+  padding-left: 5px;
+  + .listGroupSize--medium {
+    margin-top: 16px;
+  }
+}
+
+.listGroupSize--large {
+  padding-left: 10px;
+
+  + .listGroupSize--large {
+    margin-top: 24px;
+  }
+}
+
+.listGroupType--unOrdered {
+}
+.listGroupType--ordered {
+}
+.listItemSize--small {
+  font-size: 10px;
+}
+.listItemSize--medium {
+  font-size: 16px;
+}
+
+.listItemSize--large {
+  font-size: 24px;
+}
+.listGroupColor--white {
+  color: colors.$white;
+}
+.listGroupColor--light {
+  color: colors.$light;
+}
+.listGroupColor--silver {
+  color: colors.$silver;
+}
+
+.listGroupColor--ash {
+  color: colors.$ash;
+}
+.listGroupColor--dark {
+  color: colors.$dark;
+}
+.listGroupColor--black {
+  color: colors.$black;
+}

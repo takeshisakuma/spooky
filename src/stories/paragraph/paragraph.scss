@@ -10,20 +10,36 @@
 .paragraphSize--small {
   @include px2rem.font-size(10);
   line-height: 1.6;
+
+  + .paragraphSize--small {
+    margin-top: 10px;
+  }
 }
 
 .paragraphSize--medium {
   @include px2rem.font-size(16);
   line-height: 1.5;
+
+  + .paragraphSize--medium {
+    margin-top: 16px;
+  }
 }
 
 .paragraphSize--large {
   @include px2rem.font-size(24);
   line-height: 1.4;
+
+  + .paragraphSize--large {
+    margin-top: 24px;
+  }
 }
 .paragraphSize--xtraLarge {
   @include px2rem.font-size(36);
   line-height: 1.3;
+
+  + .paragraphSize--xtraLarge {
+    margin-top: 36px;
+  }
 }
 
 .paragraphColor--white {
