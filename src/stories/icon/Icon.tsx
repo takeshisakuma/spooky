@@ -3,9 +3,6 @@ import { iconType } from "./iconType";
 
 import "./icon.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const Icon: FC<iconType> = ({
   img,
   size = "large",

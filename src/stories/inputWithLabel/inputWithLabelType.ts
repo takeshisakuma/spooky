@@ -1,4 +1,4 @@
-export type floatingInputType = {
+export type inputWithLabelType = {
   type: "text" | "email" | "number" | "search" | "password" | "tel";
   maxLength?: number;
   required?: boolean;
@@ -6,5 +6,7 @@ export type floatingInputType = {
   display: string;
   placeholder?: string;
   pattern?: string;
-  id?: string;
+  inputId?: string;
+  labelId?: string;
+
 }

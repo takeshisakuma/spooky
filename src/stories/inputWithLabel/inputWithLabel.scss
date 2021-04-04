@@ -1,0 +1,12 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.normalLabel {
+  display: block;
+}
+
+.normalLabel + .input--letter {
+  margin-top: 8px;
+}

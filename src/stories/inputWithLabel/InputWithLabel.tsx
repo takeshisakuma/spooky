@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { Input } from "../input/Input";
-import { floatingInputType } from "./floatingInputType";
+import { inputWithLabelType } from "./inputWithLabelType";
 
-import "./floatingInput.scss";
+import "./inputWithLabel.scss";
 
-export const FloatingInput: FC<floatingInputType> = ({
+export const InputWithLabel: FC<inputWithLabelType> = ({
   type,
   maxLength,
   required = false,
@@ -12,19 +12,24 @@ export const FloatingInput: FC<floatingInputType> = ({
   display,
   placeholder,
   pattern,
-  id,
+  labelId,
+  inputId,
+
   ...props
 }) => {
   return (
-    <label className='floatinglabel'>
+    <>
+      <label className='normalLabel' htmlFor={inputId} id={labelId}>
+        {display}
+      </label>
+
       <Input
         type={type}
         maxLength={maxLength}
         required={required}
         placeholder='&nbsp;'
         pattern={pattern}
-        id={id}></Input>
-      <span className='labeltext'>{display}</span>
-    </label>
+        id={inputId}></Input>
+    </>
   );
 };

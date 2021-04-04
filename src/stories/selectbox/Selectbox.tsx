@@ -3,9 +3,6 @@ import { selectboxType } from "./selectboxType";
 
 import "./selectbox.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const Selectbox: FC<selectboxType> = ({
   name,
   items,

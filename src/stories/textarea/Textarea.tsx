@@ -3,9 +3,6 @@ import { textareaType } from "./textareaType";
 
 import "./textarea.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const Textarea: FC<textareaType> = ({ name, cols, rows, ...props }) => {
   return (
     <>

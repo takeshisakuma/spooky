@@ -3,9 +3,6 @@ import { listType } from "./listType";
 
 import "./list.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const List: FC<listType> = ({
   lists,
   size = "medium",

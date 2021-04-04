@@ -3,17 +3,15 @@ import { inputType } from "./inputType";
 
 import "./input.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const Input: FC<inputType> = ({
   type,
   maxLength,
-  required,
+  required = false,
   name,
   children,
   placeholder,
   pattern,
+  id,
   ...props
 }) => {
   return (
@@ -24,6 +22,7 @@ export const Input: FC<inputType> = ({
       required={required ? false : true}
       pattern={pattern}
       placeholder={placeholder}
+      id={id}
       {...props}>
       {children}
     </input>

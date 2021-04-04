@@ -3,9 +3,6 @@ import { buttonType } from "./buttonType";
 
 import "./button.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const Button: FC<buttonType> = ({
   roll = "normal",
   size = "large",

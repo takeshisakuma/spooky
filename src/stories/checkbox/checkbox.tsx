@@ -3,9 +3,6 @@ import { checkboxType } from "./checkboxType";
 
 import "./checkbox.scss";
 
-/**
- * Primary UI component for user interaction
- */
 export const Checkbox: FC<checkboxType> = ({ name, items, ...props }) => {
   return (
     <>
