@@ -3,12 +3,7 @@ import { selectboxType } from "./selectboxType";
 
 import "./selectbox.scss";
 
-export const Selectbox: FC<selectboxType> = ({
-  name,
-  items,
-  selected,
-  ...props
-}) => {
+export const Selectbox: FC<selectboxType> = ({ name, items, selected }) => {
   return (
     <>
       <select name={name} className='selectbox'>

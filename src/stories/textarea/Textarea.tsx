@@ -3,7 +3,7 @@ import { textareaType } from "./textareaType";
 
 import "./textarea.scss";
 
-export const Textarea: FC<textareaType> = ({ name, cols, rows, ...props }) => {
+export const Textarea: FC<textareaType> = ({ name, cols, rows }) => {
   return (
     <>
       <textarea

@@ -7,7 +7,6 @@ export const Icon: FC<iconType> = ({
   img,
   size = "large",
   backgroundColor,
-  ...props
 }) => {
   return (
     <>

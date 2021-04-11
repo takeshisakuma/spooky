@@ -7,7 +7,6 @@ export const Spinner: FC<spinnerType> = ({
   img,
   size = "large",
   backgroundColor,
-  ...props
 }) => {
   return (
     <>

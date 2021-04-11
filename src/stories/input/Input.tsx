@@ -12,7 +12,6 @@ export const Input: FC<inputType> = ({
   placeholder,
   pattern,
   id,
-  ...props
 }) => {
   return (
     <input
@@ -22,8 +21,7 @@ export const Input: FC<inputType> = ({
       required={required ? false : true}
       pattern={pattern}
       placeholder={placeholder}
-      id={id}
-      {...props}>
+      id={id}>
       {children}
     </input>
   );

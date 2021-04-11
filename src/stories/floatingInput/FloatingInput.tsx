@@ -13,7 +13,6 @@ export const FloatingInput: FC<floatingInputType> = ({
   placeholder,
   pattern,
   id,
-  ...props
 }) => {
   return (
     <label className='floatinglabel'>

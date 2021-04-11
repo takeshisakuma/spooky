@@ -14,8 +14,6 @@ export const InputWithLabel: FC<inputWithLabelType> = ({
   pattern,
   labelId,
   inputId,
-
-  ...props
 }) => {
   return (
     <>

@@ -3,12 +3,7 @@ import { paragraphType } from "./paragraphType";
 
 import "./paragraph.scss";
 
-export const Paragraph: FC<paragraphType> = ({
-  text,
-  size,
-  color,
-  ...props
-}) => {
+export const Paragraph: FC<paragraphType> = ({ text, size, color }) => {
   return (
     <>
       <p

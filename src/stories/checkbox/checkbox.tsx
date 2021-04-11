@@ -3,7 +3,7 @@ import { checkboxType } from "./checkboxType";
 
 import "./checkbox.scss";
 
-export const Checkbox: FC<checkboxType> = ({ name, items, ...props }) => {
+export const Checkbox: FC<checkboxType> = ({ name, items }) => {
   return (
     <>
       {items.map((item) => (

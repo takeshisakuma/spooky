@@ -8,7 +8,6 @@ export const List: FC<listType> = ({
   size = "medium",
   color,
   type = "unOrdered",
-  ...props
 }) => {
   return (
     <>

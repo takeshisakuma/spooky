@@ -11,7 +11,6 @@ export const IconButton: FC<iconButtonType> = ({
   img = "search",
   abled = true,
   children,
-  ...props
 }) => {
   return (
     <>

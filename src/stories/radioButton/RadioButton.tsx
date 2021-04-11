@@ -3,7 +3,7 @@ import { radioButtonType } from "./radioButtonType";
 
 import "./radioButton.scss";
 
-export const RadioButton: FC<radioButtonType> = ({ name, items, ...props }) => {
+export const RadioButton: FC<radioButtonType> = ({ name, items }) => {
   return (
     <>
       {items.map((item) => (

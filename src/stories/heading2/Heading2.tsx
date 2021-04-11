@@ -8,7 +8,6 @@ export const Heading2: FC<heading2Type> = ({
   size,
   color,
   decoration = "simple",
-  ...props
 }) => {
   return (
     <>

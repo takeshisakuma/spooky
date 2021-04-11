@@ -9,7 +9,6 @@ export const Button: FC<buttonType> = ({
   label,
   abled = true,
   children,
-  ...props
 }) => {
   return (
     <button
@@ -17,8 +16,7 @@ export const Button: FC<buttonType> = ({
       className={["button", `buttonSize--${size}`, `buttonColor--${roll}`].join(
         " "
       )}
-      disabled={abled ? false : true}
-      {...props}>
+      disabled={abled ? false : true}>
       {label}
       {children}
     </button>

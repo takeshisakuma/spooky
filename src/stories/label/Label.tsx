@@ -3,7 +3,7 @@ import { labelType } from "./labelType";
 
 import "./label.scss";
 
-export const Label: FC<labelType> = ({ text, color, htmlFor, ...props }) => {
+export const Label: FC<labelType> = ({ text, color, htmlFor }) => {
   return (
     <>
       <label
