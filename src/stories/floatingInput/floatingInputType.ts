@@ -7,4 +7,5 @@ export type floatingInputType = {
   placeholder?: string;
   pattern?: string;
   id?: string;
+  ajustClass?: string,
 }

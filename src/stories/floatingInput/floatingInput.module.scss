@@ -3,8 +3,8 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.floatinglabel {
-  margin-top: 40px;
+.ajustLabel {
+  margin-top: 0px;
   position: relative;
 }
 
@@ -18,12 +18,11 @@
   transition: all 0.2s ease-out;
 }
 
-.floatinglabel .input--letter {
+.ajustLabel .ajustInput {
   margin-top: 20px;
   &:not(:placeholder-shown) + .labeltext {
     transform: translateY(-38px) translateX(-16px);
   }
-
   &:focus + .labeltext {
     color: #333;
     transform: translateY(-38px) translateX(-16px);

@@ -6,4 +6,5 @@ export type inputType = {
   placeholder?: string;
   pattern?: string;
   id?: string
+  ajustClass?: string;
 }

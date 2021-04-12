@@ -3,10 +3,12 @@ export type inputWithLabelType = {
   maxLength?: number;
   required?: boolean;
   name?: string;
-  display: string;
+  text: string;
   placeholder?: string;
   pattern?: string;
   inputId?: string;
   labelId?: string;
-
+  ajustClass?: string;
+  id?: string;
+  color: "white" | "light" | "silver" | "ash" | "dark" | "black";
 }

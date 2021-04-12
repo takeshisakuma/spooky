@@ -3,10 +3,10 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.normalLabel {
+.ajustLabel {
   display: block;
 }
 
-.normalLabel + .input--letter {
+.ajustLabel + .ajustInput {
   margin-top: 8px;
 }

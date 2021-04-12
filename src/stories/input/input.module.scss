@@ -3,7 +3,7 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.input--letter {
+.inputLetter {
   background-color: colors.$light;
   border: none;
   border-radius: 10px;
@@ -13,9 +13,9 @@
   padding: 12px;
 }
 
-.input--text {
+.inputText {
 }
-.input--number {
+.inputNumber {
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
     display: none;
@@ -31,7 +31,7 @@
     color: colors.$green;
   }
 }
-.input--email {
+.inputEmail {
   /* OK */
   &:invalid {
     color: colors.$red;
@@ -41,7 +41,7 @@
     color: colors.$green;
   }
 }
-.input--tel {
+.inputTel {
   /* OK */
   &:invalid {
     color: colors.$red;
@@ -50,4 +50,6 @@
   &:valid {
     color: colors.$green;
   }
+}
+.inputPassword {
 }
