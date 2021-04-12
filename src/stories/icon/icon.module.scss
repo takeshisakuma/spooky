@@ -9,26 +9,29 @@
   background-size: 90%;
 }
 
-.icon--search {
+.iconSearch {
   background-image: url(../assets/img/icon_search.svg);
 }
-.icon--externallink {
+.iconExternallink {
   background-image: url(../assets/img/icon_externallink.svg);
 }
 
-.icon--internallink {
+.iconInternallink {
   background-image: url(../assets/img/icon_allow.svg);
 }
+.iconNone {
+  background-image: none;
+}
 
-.iconSize--large {
+.iconSizeLarge {
   height: 16px;
   width: 16px;
 }
-.iconSize--medium {
+.iconSizeMedium {
   height: 14px;
   width: 14px;
 }
-.iconSize--small {
+.iconSizeSmall {
   height: 12px;
   width: 12px;
 }

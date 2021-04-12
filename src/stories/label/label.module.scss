@@ -3,6 +3,10 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.icon {
-  margin-left: 6px;
+.label {
+  margin: 0;
+}
+
+.labelColorDark {
+  color: colors.$dark;
 }

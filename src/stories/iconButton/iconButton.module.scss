@@ -3,7 +3,6 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.label {
-  margin: 0;
-  color: colors.$dark;
+.ajustInput .ajustIcon {
+  margin-left: 6px;
 }

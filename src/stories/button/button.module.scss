@@ -41,29 +41,29 @@
   }
 }
 
-.buttonColor--normal {
+.buttonColorNormal {
   background-color: colors.$blue;
   color: colors.$white;
 }
-.buttonColor--danger {
+.buttonColorDanger {
   background-color: colors.$red;
   color: colors.$white;
 }
 
-.buttonColor--submit {
+.buttonColorSubmit {
   background-color: colors.$green;
   color: colors.$white;
 }
 
-.buttonSize--small {
+.buttonSizeSmall {
   @include px2rem.font-size(12);
   padding: 12px 16px 10px;
 }
-.buttonSize--medium {
+.buttonSizeMedium {
   @include px2rem.font-size(14);
   padding: 14px 20px 10px;
 }
-.buttonSize--large {
+.buttonSizeLarge {
   @include px2rem.font-size(16);
   padding: 16px 24px 12px;
 }
