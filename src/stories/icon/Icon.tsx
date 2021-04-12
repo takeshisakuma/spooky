@@ -27,7 +27,7 @@ export const Icon: FC<iconType> = ({
             ? Styles.iconExternallink
             : img === "internallink"
             ? Styles.iconInternallink
-            : Styles.iconNome,
+            : Styles.iconNone,
 
           ajustClass,
         ].join(" ")}

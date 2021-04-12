@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { radioButtonType } from "./radioButtonType";
 
-import "./radioButton.scss";
+import Styles from "./radioButton.module.scss";
 
 export const RadioButton: FC<radioButtonType> = ({ name, items }) => {
   return (
@@ -12,9 +12,9 @@ export const RadioButton: FC<radioButtonType> = ({ name, items }) => {
             name={name}
             type='radio'
             id={item.value}
-            className='radioButton'
+            className={Styles.radioButton}
           />
-          <label htmlFor={item.value} className='radioLabel'>
+          <label htmlFor={item.value} className={Styles.radioLabel}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               x='0px'

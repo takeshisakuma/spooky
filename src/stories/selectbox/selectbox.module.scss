@@ -8,7 +8,7 @@
   border-radius: 4px;
 }
 
-select {
+.selectbox {
   /* remove ▼ */
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -21,13 +21,8 @@ select {
   background-size: 10px;
 }
 
-/* remove ▼(for IE) */
-select::-ms-expand {
-  display: none;
-}
-
 /* ▲ */
-select:focus {
+.selectbox:focus {
   background: #eee url(../assets/img/triangleUp.svg) no-repeat center right 10px/16px
     16px;
   background-size: 10px;

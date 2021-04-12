@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import { textareaType } from "./textareaType";
 
-import "./textarea.scss";
+import Styles from "./textarea.module.scss";
 
 export const Textarea: FC<textareaType> = ({ name, cols, rows }) => {
   return (
     <>
       <textarea
-        className='textarea'
+        className={Styles.textarea}
         rows={rows}
         cols={cols}
         name={name}></textarea>

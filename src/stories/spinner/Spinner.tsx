@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { spinnerType } from "./spinnerType";
 
-import "./spinner.scss";
+import Styles from "./spinner.module.scss";
 
 export const Spinner: FC<spinnerType> = ({
   img,
@@ -11,13 +11,19 @@ export const Spinner: FC<spinnerType> = ({
   return (
     <>
       <div
-        className='spinner--wrapper'
+        className={Styles.spinnerWrapper}
         style={{ backgroundColor: `${backgroundColor}` }}>
         <div
           className={[
-            "spinner",
-            `spinnerSize--${size}`,
-            `spinner--${img}`,
+            Styles.spinner,
+
+            size === "large"
+              ? Styles.spinnerSizeLarge
+              : size === "small"
+              ? Styles.spinnerSizeSmall
+              : Styles.spinnerSizeMedium,
+
+            img === "circle" ? Styles.spinnerImgCircle : Styles.spinnerImgNone,
           ].join(" ")}
         />
       </div>

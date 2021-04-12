@@ -11,7 +11,7 @@
 }
 
 /* make square before label */
-.checkbox + label::before {
+.checkbox + .checkboxLabel::before {
   content: "";
   position: absolute;
   border: 1px solid #343434;
@@ -21,12 +21,12 @@
 }
 
 /* focus for square */
-.checkbox:focus + label::before {
+.checkbox:focus + .checkboxLabel::before {
   border: 1px solid colors.$red;
 }
 
 /* set SVG position and size */
-.checkbox + label > svg {
+.checkbox + .checkboxLabel > svg {
   width: 20px;
   height: 20px;
   position: relative;
@@ -36,7 +36,7 @@
 }
 
 /* unchecked  */
-.checkbox + label > svg > path {
+.checkbox + .checkboxLabel > svg > path {
   fill: none;
   stroke: colors.$red;
   stroke-linejoin: round;
@@ -49,13 +49,13 @@
 }
 
 /* checked */
-.checkbox:checked + label > svg > path {
+.checkbox:checked + .checkboxLabel > svg > path {
   stroke-dashoffset: 0;
   stroke-opacity: 1;
 }
 
 /* label position */
-.checkbox + label {
+.checkbox + .checkboxLabel {
   left: -30px;
   position: relative;
 }

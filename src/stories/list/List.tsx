@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { listType } from "./listType";
 
-import "./list.scss";
+import Styles from "./list.module.scss";
 
 export const List: FC<listType> = ({
   lists,
@@ -14,13 +14,38 @@ export const List: FC<listType> = ({
       {type === "unOrdered" ? (
         <ul
           className={[
-            "listGroup",
-            `listGroupType--${type}`,
-            `listGroupSize--${size}`,
-            `listGroupColor--${color}`,
+            Styles.listGroup,
+            Styles.listGroupTypeUnOrdered,
+
+            size === "small"
+              ? Styles.listGroupSizeSmall
+              : size === "large"
+              ? Styles.listGroupSizeLarge
+              : Styles.listGroupSizeMedium,
+
+            color === "light"
+              ? Styles.listGroupColorLight
+              : color === "silver"
+              ? Styles.listGroupColorSilver
+              : color === "black"
+              ? Styles.listGroupColorBlack
+              : color === "white"
+              ? Styles.listGroupColorWhite
+              : color === "ash"
+              ? Styles.listGroupColorAsh
+              : Styles.listGroupColorDark,
           ].join(" ")}>
           {lists.map((list) => (
-            <li className={["listItem", `listItemSize--${size}`].join(" ")}>
+            <li
+              className={[
+                Styles.listItem,
+
+                size === "small"
+                  ? Styles.listItemSizeSmall
+                  : size === "large"
+                  ? Styles.listItemSizeLarge
+                  : Styles.listItemSizeMedium,
+              ].join(" ")}>
               {list}
             </li>
           ))}
@@ -28,13 +53,37 @@ export const List: FC<listType> = ({
       ) : (
         <ol
           className={[
-            "listGroup",
-            `listGroupType--${type}`,
-            `listGroupSize--${size}`,
-            `listGroupColor--${color}`,
+            Styles.listGroup,
+            Styles.listGroupTypeUnOrdered,
+            size === "small"
+              ? Styles.listGroupSizeSmall
+              : size === "large"
+              ? Styles.listGroupSizeLarge
+              : Styles.listGroupSizeMedium,
+
+            color === "light"
+              ? Styles.listGroupColorLight
+              : color === "silver"
+              ? Styles.listGroupColorSilver
+              : color === "black"
+              ? Styles.listGroupColorBlack
+              : color === "white"
+              ? Styles.listGroupColorWhite
+              : color === "ash"
+              ? Styles.listGroupColorAsh
+              : Styles.listGroupColorDark,
           ].join(" ")}>
           {lists.map((list) => (
-            <li className={["listItem", `listItemSize--${size}`].join(" ")}>
+            <li
+              className={[
+                Styles.listItem,
+
+                size === "small"
+                  ? Styles.listItemSizeSmall
+                  : size === "large"
+                  ? Styles.listItemSizeLarge
+                  : Styles.listItemSizeMedium,
+              ].join(" ")}>
               {list}
             </li>
           ))}

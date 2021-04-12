@@ -21,6 +21,13 @@
 }
 .iconNone {
   background-image: none;
+
+  &.iconSizeLarge,
+  &.iconSizeMedium,
+  &.iconSizeSmall {
+    height: 0;
+    width: 0;
+  }
 }
 
 .iconSizeLarge {

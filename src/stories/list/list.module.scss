@@ -6,62 +6,63 @@
 .listGroup {
   margin: 0;
 }
-.listGroupColor--white {
-  color: colors.$white;
-}
-.listGroupSize--small {
+
+.listGroupSizeSmall {
   padding-left: 0px;
 
-  + .listGroupSize--small {
+  + .listGroupSizeSmall {
     margin-top: 10px;
   }
 }
 
-.listGroupSize--medium {
+.listGroupSizeMedium {
   padding-left: 5px;
-  + .listGroupSize--medium {
+
+  + .listGroupSizeMedium {
     margin-top: 16px;
   }
 }
 
-.listGroupSize--large {
+.listGroupSizeLarge {
   padding-left: 10px;
 
-  + .listGroupSize--large {
+  + .listGroupSizeLarge {
     margin-top: 24px;
   }
 }
 
-.listGroupType--unOrdered {
+.listGroupTypeUnOrdered {
 }
-.listGroupType--ordered {
+.listGroupTypeOrdered {
 }
-.listItemSize--small {
+.listItemSizeSmall {
   font-size: 10px;
 }
-.listItemSize--medium {
+
+.listItemSizeMedium {
   font-size: 16px;
 }
 
-.listItemSize--large {
+.listItemSizeLarge {
   font-size: 24px;
 }
-.listGroupColor--white {
+
+.listGroupColorWhite {
   color: colors.$white;
 }
-.listGroupColor--light {
+.listGroupColorLight {
   color: colors.$light;
 }
-.listGroupColor--silver {
+.listGroupColorSilver {
   color: colors.$silver;
 }
 
-.listGroupColor--ash {
+.listGroupColorAsh {
   color: colors.$ash;
 }
-.listGroupColor--dark {
+.listGroupColorDark {
   color: colors.$dark;
 }
-.listGroupColor--black {
+.listGroupColorBlack {
   color: colors.$black;
 }

@@ -7,59 +7,59 @@
   margin: 0;
 }
 
-.paragraphSize--small {
+.paragraphSizeSmall {
   @include px2rem.font-size(10);
   line-height: 1.6;
 
-  + .paragraphSize--small {
+  + .paragraphSizeSmall {
     margin-top: 10px;
   }
 }
 
-.paragraphSize--medium {
+.paragraphSizeMedium {
   @include px2rem.font-size(16);
   line-height: 1.5;
 
-  + .paragraphSize--medium {
+  + .paragraphSizeMedium {
     margin-top: 16px;
   }
 }
 
-.paragraphSize--large {
+.paragraphSizeLarge {
   @include px2rem.font-size(24);
   line-height: 1.4;
 
-  + .paragraphSize--large {
+  + .paragraphSizeLarge {
     margin-top: 24px;
   }
 }
-.paragraphSize--xtraLarge {
+.paragraphSizeXtraLarge {
   @include px2rem.font-size(36);
   line-height: 1.3;
 
-  + .paragraphSize--xtraLarge {
+  + .paragraphSizeXtraLarge {
     margin-top: 36px;
   }
 }
 
-.paragraphColor--white {
+.paragraphColorWhite {
   color: colors.$white;
 }
-.paragraphColor--light {
+.paragraphColorLight {
   color: colors.$light;
 }
 
-.paragraphColor--silver {
+.paragraphColorSilver {
   color: colors.$silver;
 }
 
-.paragraphColor--ash {
+.paragraphColorAsh {
   color: colors.$ash;
 }
 
-.paragraphColor--dark {
+.paragraphColorDark {
   color: colors.$dark;
 }
-.paragraphColor--black {
+.paragraphColorBlack {
   color: colors.$black;
 }

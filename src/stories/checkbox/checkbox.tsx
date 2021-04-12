@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import { checkboxType } from "./checkboxType";
 
-import "./checkbox.scss";
+//import "./checkbox.scss";
+import Styles from "./checkbox.module.scss";
 
 export const Checkbox: FC<checkboxType> = ({ name, items }) => {
   return (
@@ -10,14 +11,14 @@ export const Checkbox: FC<checkboxType> = ({ name, items }) => {
         <div>
           <input
             type='checkbox'
-            className='checkbox'
+            className={Styles.checkbox}
             name={name}
             key={item.value}
             id={item.value}
             value={item.value}
             defaultChecked={item.checked}
           />
-          <label className='checkboxLabel' htmlFor={item.value}>
+          <label className={Styles.checkboxLabel} htmlFor={item.value}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               x='0px'

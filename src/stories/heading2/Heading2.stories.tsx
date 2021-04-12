@@ -19,7 +19,7 @@ Simple.args = {
   text: "Heading1",
   size: "medium",
   color: "dark",
-  decoration: "simple",
+  decoration: "none",
 };
 export const Underline = Template.bind({});
 Underline.args = {
