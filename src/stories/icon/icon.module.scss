@@ -9,15 +9,29 @@
   background-size: 90%;
 }
 
+.iconColorRed {
+  background-color: colors.$red;
+}
+.iconColorBlue {
+  background-color: colors.$blue;
+}
+
+.iconColorWhite {
+  background-color: colors.$white;
+}
+
 .iconSearch {
-  background-image: url(../assets/img/icon_search.svg);
+  //background-image: url(../assets/img/icon_search.svg);
+  mask-image: url("../assets/img/icon_search.svg");
 }
 .iconExternallink {
-  background-image: url(../assets/img/icon_externallink.svg);
+  //background-image: url(../assets/img/icon_externallink.svg);
+  mask-image: url("../assets/img/icon_externallink.svg");
 }
 
 .iconInternallink {
-  background-image: url(../assets/img/icon_allow.svg);
+  //background-image: url(../assets/img/icon_allow.svg);
+  mask-image: url("../assets/img/icon_allow.svg");
 }
 .iconNone {
   background-image: none;

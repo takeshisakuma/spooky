@@ -1,0 +1,67 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.span {
+}
+
+.inlinetextBold {
+  font-weight: bold;
+}
+
+.inlinetextItalic {
+  font-style: italic;
+}
+
+.inlinetextUnderline {
+  text-decoration: underline;
+}
+.inlinetextLineThrough {
+  text-decoration: line-through;
+}
+
+.paragraphSizeSmall {
+  @include px2rem.font-size(10);
+  line-height: 1.6;
+
+  + .paragraphSizeSmall {
+    margin-top: 10px;
+  }
+}
+
+.inlinetextSizeMedium {
+  @include px2rem.font-size(16);
+  line-height: 1.5;
+}
+
+.inlinetextSizeLarge {
+  @include px2rem.font-size(24);
+  line-height: 1.4;
+}
+.inlinetextSizeXtraLarge {
+  @include px2rem.font-size(36);
+  line-height: 1.3;
+}
+
+.inlinetextColorWhite {
+  color: colors.$white;
+}
+.inlinetextColorLight {
+  color: colors.$light;
+}
+
+.inlinetextColorSilver {
+  color: colors.$silver;
+}
+
+.inlinetextColorAsh {
+  color: colors.$ash;
+}
+
+.inlinetextColorDark {
+  color: colors.$dark;
+}
+.inlinetextColorBlack {
+  color: colors.$black;
+}

@@ -8,7 +8,8 @@
 }
 
 .listGroupSizeSmall {
-  padding-left: 0px;
+  padding-left: 0;
+  list-style-position: inside;
 
   + .listGroupSizeSmall {
     margin-top: 10px;
@@ -16,7 +17,8 @@
 }
 
 .listGroupSizeMedium {
-  padding-left: 5px;
+  padding-left: 0;
+  list-style-position: inside;
 
   + .listGroupSizeMedium {
     margin-top: 16px;
@@ -24,7 +26,8 @@
 }
 
 .listGroupSizeLarge {
-  padding-left: 10px;
+  padding-left: 0;
+  list-style-position: inside;
 
   + .listGroupSizeLarge {
     margin-top: 24px;

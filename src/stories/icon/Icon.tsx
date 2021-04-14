@@ -6,7 +6,7 @@ import Styles from "./icon.module.scss";
 export const Icon: FC<iconType> = ({
   img,
   size = "large",
-  backgroundColor,
+  color,
   ajustClass,
 }) => {
   return (
@@ -29,9 +29,14 @@ export const Icon: FC<iconType> = ({
             ? Styles.iconInternallink
             : Styles.iconNone,
 
+          color === "red"
+            ? Styles.iconColorRed
+            : color === "blue"
+            ? Styles.iconColorBlue
+            : Styles.iconColorWhite,
+
           ajustClass,
         ].join(" ")}
-        style={{ backgroundColor: `${backgroundColor}` }}
       />
     </>
   );
