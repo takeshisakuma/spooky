@@ -17,6 +17,5 @@ const Template: Story<spinnerType> = (args: spinnerType) => (
 export const Circle = Template.bind({});
 Circle.args = {
   img: "circle",
-  size: "large",
-  backgroundColor: "#636e72",
+  color: "red",
 };

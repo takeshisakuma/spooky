@@ -1,5 +1,4 @@
 export type spinnerType = {
   img: "circle" | "none";
-  size?: "small" | "medium" | "large";
-  backgroundColor?: string;
+  color: "blue" | "red" | "yellow" | "green" | "white" | "black";
 }

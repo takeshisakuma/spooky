@@ -4,9 +4,11 @@
 @use "../assets/scss/_mediaQuery.scss";
 
 .icon {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 90%;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+.icon:before {
+  content: "　";
 }
 
 .iconColorRed {
@@ -16,43 +18,54 @@
   background-color: colors.$blue;
 }
 
+.iconColorYellow {
+  background-color: colors.$yellow;
+}
+
+.iconColorGreen {
+  background-color: colors.$green;
+}
+
 .iconColorWhite {
   background-color: colors.$white;
 }
 
+.iconColorBrack {
+  background-color: colors.$black;
+}
+
 .iconSearch {
-  //background-image: url(../assets/img/icon_search.svg);
   mask-image: url("../assets/img/icon_search.svg");
 }
 .iconExternallink {
-  //background-image: url(../assets/img/icon_externallink.svg);
   mask-image: url("../assets/img/icon_externallink.svg");
 }
 
 .iconInternallink {
-  //background-image: url(../assets/img/icon_allow.svg);
   mask-image: url("../assets/img/icon_allow.svg");
 }
+
+.iconTelephone {
+  mask-image: url("../assets/img/icon_tel.svg");
+}
+.iconMail {
+  mask-image: url("../assets/img/icon_mail.svg");
+}
+
+.iconUp {
+  mask-image: url("../assets/img/icon_up.svg");
+}
+.iconDown {
+  mask-image: url("../assets/img/icon_down.svg");
+}
+
 .iconNone {
   background-image: none;
+  background-color: transparent;
+  height: 0;
+  width: 0;
 
-  &.iconSizeLarge,
-  &.iconSizeMedium,
-  &.iconSizeSmall {
-    height: 0;
-    width: 0;
+  &:before {
+    content: "";
   }
-}
-
-.iconSizeLarge {
-  height: 16px;
-  width: 16px;
-}
-.iconSizeMedium {
-  height: 14px;
-  width: 14px;
-}
-.iconSizeSmall {
-  height: 12px;
-  width: 12px;
 }

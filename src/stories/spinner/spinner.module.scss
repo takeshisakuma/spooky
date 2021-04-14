@@ -4,23 +4,55 @@
 @use "../assets/scss/_mediaQuery.scss";
 
 .spinnerWrapper {
-  display: inline-block;
+  display: block;
+  overflow: hidden;
+
+  /* for storybook */
+  width: 20px;
+  height: 20px;
 }
 
 .spinner {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 90%;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+.spinner:before {
+  display: block;
+  content: "";
+  padding-top: 100%;
 }
 
 .spinnerImgCircle {
-  background-image: url(../assets/img/spinner_circle.svg);
+  mask-image: url("../assets/img/spinner_circle.svg");
   animation-name: rotate;
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0.5, 0.51, 0.51, 0.52);
   animation-iteration-count: infinite;
 }
 .spinnerImgNone {
+  background-color: transparent;
+}
+.spinnerColorRed {
+  background-color: colors.$red;
+}
+.spinnerColorBlue {
+  background-color: colors.$blue;
+}
+
+.spinnerColorYellow {
+  background-color: colors.$yellow;
+}
+
+.spinnerColorGreen {
+  background-color: colors.$green;
+}
+
+.spinnerColorWhite {
+  background-color: colors.$white;
+}
+
+.spinnerColorBlack {
+  background-color: colors.$black;
 }
 
 @keyframes rotate {
@@ -30,17 +62,4 @@
   100% {
     transform: rotateZ(360deg);
   }
-}
-
-.spinnerSizeLarge {
-  height: 16px;
-  width: 16px;
-}
-.spinnerSizeMedium {
-  height: 14px;
-  width: 14px;
-}
-.spinnerSizeSmall {
-  height: 12px;
-  width: 12px;
 }

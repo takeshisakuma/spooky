@@ -23,12 +23,7 @@ export const IconButton: FC<iconButtonType> = ({
         abled={abled ? true : false}
         label={label}
         size={size}>
-        <Icon
-          ajustClass={Styles.ajustIcon}
-          img={img}
-          size={size}
-          color={"white"}
-        />
+        <Icon ajustClass={Styles.ajustIcon} img={img} color={"white"} />
       </Button>
     </>
   );

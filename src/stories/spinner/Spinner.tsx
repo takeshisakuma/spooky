@@ -3,25 +3,25 @@ import { spinnerType } from "./spinnerType";
 
 import Styles from "./spinner.module.scss";
 
-export const Spinner: FC<spinnerType> = ({
-  img,
-  size = "large",
-  backgroundColor,
-}) => {
+export const Spinner: FC<spinnerType> = ({ img, color }) => {
   return (
     <>
-      <div
-        className={Styles.spinnerWrapper}
-        style={{ backgroundColor: `${backgroundColor}` }}>
+      <div className={Styles.spinnerWrapper}>
         <div
           className={[
             Styles.spinner,
 
-            size === "large"
-              ? Styles.spinnerSizeLarge
-              : size === "small"
-              ? Styles.spinnerSizeSmall
-              : Styles.spinnerSizeMedium,
+            color === "red"
+              ? Styles.spinnerColorRed
+              : color === "blue"
+              ? Styles.spinnerColorBlue
+              : color === "yellow"
+              ? Styles.spinnerColorYellow
+              : color === "green"
+              ? Styles.spinnerColorGreen
+              : color === "black"
+              ? Styles.spinnerColorBlack
+              : Styles.spinnerColorWhite,
 
             img === "circle" ? Styles.spinnerImgCircle : Styles.spinnerImgNone,
           ].join(" ")}

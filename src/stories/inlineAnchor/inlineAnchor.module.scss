@@ -1,0 +1,64 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.ajustIcon {
+  display: inline;
+  margin-left: 2px;
+  vertical-align: text-top;
+}
+
+.anchor {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  &:link {
+    color: colors.$blue;
+  }
+  &:visited {
+    color: colors.$blue;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+  }
+}
+
+.inlinetextBold {
+  font-weight: bold;
+}
+
+.inlinetextItalic {
+  font-style: italic;
+}
+
+.inlinetextUnderline {
+  text-decoration: underline;
+}
+.inlinetextLineThrough {
+  text-decoration: line-through;
+}
+
+.paragraphSizeSmall {
+  @include px2rem.font-size(10);
+  line-height: 1.6;
+
+  + .paragraphSizeSmall {
+    margin-top: 10px;
+  }
+}
+
+.inlinetextSizeMedium {
+  @include px2rem.font-size(16);
+  line-height: 1.5;
+}
+
+.inlinetextSizeLarge {
+  @include px2rem.font-size(24);
+  line-height: 1.4;
+}
+.inlinetextSizeXtraLarge {
+  @include px2rem.font-size(36);
+  line-height: 1.3;
+}
