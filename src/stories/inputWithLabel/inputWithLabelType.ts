@@ -8,7 +8,7 @@ export type inputWithLabelType = {
   pattern?: string;
   inputId?: string;
   labelId?: string;
-  ajustClass?: string;
+  adjustClass?: string;
   id?: string;
   color: "white" | "light" | "silver" | "ash" | "dark" | "black";
 }

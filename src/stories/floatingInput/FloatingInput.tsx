@@ -13,12 +13,12 @@ export const FloatingInput: FC<floatingInputType> = ({
   placeholder,
   pattern,
   id,
-  ajustClass,
+  adjustClass,
 }) => {
   return (
-    <label className={Styles.ajustLabel}>
+    <label className={Styles.adjustLabel}>
       <Input
-        ajustClass={Styles.ajustInput}
+        adjustClass={Styles.adjustInput}
         type={type}
         maxLength={maxLength}
         required={required}

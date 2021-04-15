@@ -11,7 +11,7 @@ export const Input: FC<inputType> = ({
   placeholder,
   pattern,
   id,
-  ajustClass,
+  adjustClass,
 }) => {
   return (
     <input
@@ -29,7 +29,7 @@ export const Input: FC<inputType> = ({
           ? Styles.inputTel
           : Styles.inputText,
 
-        ajustClass,
+        adjustClass,
       ].join(" ")}
       maxLength={maxLength}
       required={required ? false : true}

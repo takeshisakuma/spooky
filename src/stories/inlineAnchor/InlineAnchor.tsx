@@ -13,7 +13,7 @@ export const InlineAnchor: FC<inlineAnchorType> = ({
   decoration = "none",
   img,
   color = "blue",
-  ajustClass,
+  adjustClass,
 }) => {
   return (
     <>
@@ -35,7 +35,7 @@ export const InlineAnchor: FC<inlineAnchorType> = ({
         ].join(" ")}
         rel='noreferrer'>
         {text}
-        <Icon ajustClass={Styles.ajustIcon} img={img} color={color} />
+        <Icon adjustClass={Styles.adjustIcon} img={img} color={color} />
       </a>
     </>
   );

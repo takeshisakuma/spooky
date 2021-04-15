@@ -6,7 +6,7 @@ import Styles from "./icon.module.scss";
 export const Icon: FC<iconType> = ({
   img,
   color,
-  ajustClass,
+  adjustClass,
   children = " ",
 }) => {
   return (
@@ -43,7 +43,7 @@ export const Icon: FC<iconType> = ({
             ? Styles.iconColorBlack
             : Styles.iconColorWhite,
 
-          ajustClass,
+          adjustClass,
         ].join(" ")}
       />
     </>

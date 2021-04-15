@@ -5,5 +5,5 @@ export type iconButtonType = {
   abled?: boolean;
   img: "search" | "externallink" | "internallink" | "none";
   onClick?: () => void;
-  ajustClass?: string;
+  adjustClass?: string;
 }

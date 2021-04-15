@@ -13,17 +13,17 @@ export const IconButton: FC<iconButtonType> = ({
   img = "search",
   abled = true,
   children,
-  ajustClass,
+  adjustClass,
 }) => {
   return (
     <>
       <Button
-        ajustClass={Styles.ajustInput}
+        adjustClass={Styles.adjustInput}
         roll={roll}
         abled={abled ? true : false}
         label={label}
         size={size}>
-        <Icon ajustClass={Styles.ajustIcon} img={img} color={"white"} />
+        <Icon adjustClass={Styles.adjustIcon} img={img} color={"white"} />
       </Button>
     </>
   );

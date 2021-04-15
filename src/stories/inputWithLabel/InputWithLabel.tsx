@@ -15,7 +15,7 @@ export const InputWithLabel: FC<inputWithLabelType> = ({
   pattern,
   labelId,
   inputId,
-  ajustClass,
+  adjustClass,
   id,
   color,
   children,
@@ -23,13 +23,13 @@ export const InputWithLabel: FC<inputWithLabelType> = ({
   return (
     <>
       <Label
-        ajustClass={Styles.ajustLabel}
+        adjustClass={Styles.adjustLabel}
         htmlFor={inputId}
         color={color}
         text={text}></Label>
 
       <Input
-        ajustClass={Styles.ajustInput}
+        adjustClass={Styles.adjustInput}
         type={type}
         maxLength={maxLength}
         required={required}

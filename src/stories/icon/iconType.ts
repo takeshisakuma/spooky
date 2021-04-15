@@ -1,5 +1,5 @@
 export type iconType = {
   img: "search" | "externallink" | "internallink" | "tel" | "mail" | "up" | "down" | "none";
-  ajustClass?: string;
+  adjustClass?: string;
   color: "blue" | "red" | "yellow" | "green" | "white" | "black";
 }

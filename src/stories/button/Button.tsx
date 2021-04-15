@@ -9,7 +9,7 @@ export const Button: FC<buttonType> = ({
   size = "large",
   label,
   abled = true,
-  ajustClass,
+  adjustClass,
   children,
 }) => {
   return (
@@ -30,7 +30,7 @@ export const Button: FC<buttonType> = ({
           ? Styles.buttonColorSubmit
           : Styles.buttonColorNormal,
 
-        ajustClass,
+        adjustClass,
       ].join(" ")}
       disabled={abled ? false : true}>
       {label}

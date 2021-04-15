@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { labelType } from "./labelType";
 
 import Styles from "./label.module.scss";
-export const Label: FC<labelType> = ({ text, color, htmlFor, ajustClass }) => {
+export const Label: FC<labelType> = ({ text, color, htmlFor, adjustClass }) => {
   return (
     <>
       <label
@@ -21,7 +21,7 @@ export const Label: FC<labelType> = ({ text, color, htmlFor, ajustClass }) => {
             ? Styles.labelColorAsh
             : Styles.labelColorDark,
 
-          ajustClass,
+          adjustClass,
         ].join(" ")}
         htmlFor={htmlFor}>
         {text}

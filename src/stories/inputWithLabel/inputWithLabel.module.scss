@@ -3,10 +3,10 @@
 @use "../assets/scss/_px2rem.scss";
 @use "../assets/scss/_mediaQuery.scss";
 
-.ajustLabel {
+.adjustLabel {
   display: block;
 }
 
-.ajustLabel + .ajustInput {
+.adjustLabel + .adjustInput {
   margin-top: 8px;
 }
