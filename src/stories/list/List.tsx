@@ -54,7 +54,7 @@ export const List: FC<listType> = ({
         <ol
           className={[
             Styles.listGroup,
-            Styles.listGroupTypeUnOrdered,
+            Styles.listGroupTypeOrdered,
             size === "small"
               ? Styles.listGroupSizeSmall
               : size === "large"

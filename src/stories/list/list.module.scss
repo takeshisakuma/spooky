@@ -5,11 +5,11 @@
 
 .listGroup {
   margin: 0;
+  list-style-position: inside;
 }
 
 .listGroupSizeSmall {
   padding-left: 0;
-  list-style-position: inside;
 
   + .listGroupSizeSmall {
     margin-top: 10px;
@@ -18,7 +18,6 @@
 
 .listGroupSizeMedium {
   padding-left: 0;
-  list-style-position: inside;
 
   + .listGroupSizeMedium {
     margin-top: 16px;
@@ -27,17 +26,27 @@
 
 .listGroupSizeLarge {
   padding-left: 0;
-  list-style-position: inside;
 
   + .listGroupSizeLarge {
     margin-top: 24px;
   }
 }
 
-.listGroupTypeUnOrdered {
-}
 .listGroupTypeOrdered {
 }
+
+.listGroupTypeUnOrdered {
+  .listItem {
+    &::marker {
+      content: "• ";
+      margin-right: 20px;
+    }
+  }
+}
+
+.listItem {
+}
+
 .listItemSizeSmall {
   font-size: 10px;
 }
