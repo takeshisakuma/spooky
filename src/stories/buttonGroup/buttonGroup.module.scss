@@ -1,0 +1,25 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.buttonGroup {
+  display: flex;
+}
+
+.buttonGroupPositionCenter {
+  justify-content: center;
+}
+
+.buttonGroupPositionLeft {
+  justify-content: flex-start;
+}
+.buttonGroupPositionRight {
+  justify-content: flex-end;
+}
+
+.adjustButton {
+  + .adjustButton {
+    margin-left: 20px;
+  }
+}

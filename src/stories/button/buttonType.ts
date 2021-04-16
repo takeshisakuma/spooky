@@ -4,5 +4,5 @@ export type buttonType = {
   label: string;
   abled?: boolean;
   onClick?: () => void;
-  adjustClass: string;
+  adjustClass?: string;
 }
