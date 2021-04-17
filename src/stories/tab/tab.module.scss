@@ -1,0 +1,37 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.tab {
+}
+.tabSelecterGroup {
+  display: flex;
+  background-color: colors.$ash;
+}
+.tabSelecterItem {
+  padding: 20px;
+  border: none;
+  background-color: colors.$silver;
+  &:hover {
+    cursor: pointer;
+  }
+  &.selected {
+    border-bottom: 2px solid colors.$accentColor;
+  }
+  &.unSelected {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.tabContentGroup {
+  background-color: colors.$light;
+}
+
+.tabContentItem {
+  padding: 20px;
+
+  &.hide {
+    display: none;
+  }
+}
