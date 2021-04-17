@@ -30,5 +30,10 @@ Normal.args = {
       content: "content3",
       id: "ccc",
     },
+    {
+      title: "tab4",
+      content: "content4",
+      id: "ddd",
+    },
   ],
 };

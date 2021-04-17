@@ -16,58 +16,30 @@ export const Tab: FC<tabType> = ({ tabs }) => {
       <div className={Styles.tab}>
         <div>
           <div className={Styles.tabSelecterGroup}>
-            <button
-              className={[
-                Styles.tabSelecterItem,
-                selected === tabs[0].id ? Styles.selected : Styles.unSelected,
-              ].join(" ")}
-              onClick={switchContent}
-              value={tabs[0].id}>
-              {tabs[0].title}
-            </button>
-            <button
-              className={[
-                Styles.tabSelecterItem,
-                selected === tabs[1].id ? Styles.selected : Styles.unSelected,
-              ].join(" ")}
-              onClick={switchContent}
-              value={tabs[1].id}>
-              {tabs[1].title}
-            </button>
-            <button
-              className={[
-                Styles.tabSelecterItem,
-                selected === tabs[2].id ? Styles.selected : Styles.unSelected,
-              ].join(" ")}
-              onClick={switchContent}
-              value={tabs[2].id}>
-              {tabs[2].title}
-            </button>
+            {tabs.map((tab) => (
+              <button
+                className={[
+                  Styles.tabSelecterItem,
+                  selected === tab.id ? Styles.selected : Styles.unSelected,
+                ].join(" ")}
+                onClick={switchContent}
+                value={tab.id}>
+                {tab.title}
+              </button>
+            ))}
           </div>
         </div>
         <div>
           <div className={Styles.tabContentGroup}>
-            <div
-              className={[
-                Styles.tabContentItem,
-                selected === tabs[0].id ? Styles.show : Styles.hide,
-              ].join(" ")}>
-              {tabs[0].content}
-            </div>
-            <div
-              className={[
-                Styles.tabContentItem,
-                selected === tabs[1].id ? Styles.show : Styles.hide,
-              ].join(" ")}>
-              {tabs[1].content}
-            </div>
-            <div
-              className={[
-                Styles.tabContentItem,
-                selected === tabs[2].id ? Styles.show : Styles.hide,
-              ].join(" ")}>
-              {tabs[2].content}
-            </div>
+            {tabs.map((tab) => (
+              <div
+                className={[
+                  Styles.tabContentItem,
+                  selected === tab.id ? Styles.show : Styles.hide,
+                ].join(" ")}>
+                {tab.content}
+              </div>
+            ))}
           </div>
         </div>
       </div>
