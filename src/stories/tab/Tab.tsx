@@ -6,7 +6,6 @@ import Styles from "./tab.module.scss";
 export const Tab: FC<tabType> = ({ tabs }) => {
   const [selected, setSelected] = useState(tabs[0].id);
   const switchContent = (e: React.MouseEvent<HTMLButtonElement>) => {
-    // setSelected(e.currentTarget.dataset.selecterid!);
     setSelected(e.currentTarget.value);
     console.log(selected);
   };

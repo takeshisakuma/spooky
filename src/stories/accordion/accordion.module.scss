@@ -1,0 +1,46 @@
+@use "../assets/scss/_font.scss";
+@use "../assets/scss/_colors.scss";
+@use "../assets/scss/_px2rem.scss";
+@use "../assets/scss/_mediaQuery.scss";
+
+.accordion {
+  border-bottom: 1px solid colors.$ash;
+  border-top: 1px solid colors.$ash;
+}
+
+.accordionUnit {
+  + .accordionUnit {
+    border-top: 1px solid colors.$ash;
+  }
+}
+.accordionHeader {
+  font-size: 1rem;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background-image: url("../assets/img/triangleDown.svg");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &.active {
+    background-image: url("../assets/img/triangleUp.svg");
+  }
+}
+.accordionBody {
+  background-color: colors.$light;
+  padding: 8px;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}
