@@ -18,8 +18,25 @@
   justify-content: flex-end;
 }
 
-.adjustButton {
-  + .adjustButton {
-    margin-left: 20px;
+.buttonGroupSizeLarge {
+  .adjustButton {
+    + .adjustButton {
+      margin-left: 20px;
+    }
+  }
+}
+
+.buttonGroupSizeMedium {
+  .adjustButton {
+    + .adjustButton {
+      margin-left: 16px;
+    }
+  }
+}
+.buttonGroupSizeSmall {
+  .adjustButton {
+    + .adjustButton {
+      margin-left: 12px;
+    }
   }
 }

@@ -22,8 +22,14 @@ export const ButtonGroup: FC<buttonGroupType> = ({
             : position === "right"
             ? Styles.buttonGroupPositionRight
             : Styles.buttonGroupPositionCenter,
+
+          size === "large"
+            ? Styles.buttonGroupSizeLarge
+            : size === "small"
+            ? Styles.buttonGroupSizeSmall
+            : Styles.buttonGroupSizeMedium,
         ].join(" ")}>
-        {buttons.map((button: any) => (
+        {buttons.map((button) => (
           <Button
             adjustClass={Styles.adjustButton}
             roll={button.roll}
